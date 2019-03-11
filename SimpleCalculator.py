@@ -8,23 +8,25 @@ import unittest
 #    - function should return result of operation
 
 def calculate(operation, first_num, second_num):
+    if operation == "add":
+        result = first_num + second_num
+        return result
+    elif operation == "subtract":
+        result = first_num - second_num
+        return result
+    elif operation == "multiply":
+        result = first_num * second_num
+        return result
+    elif operation == "divide":
+        result = first_num  / second_num
+        return result
 
-    x = input("First number:")
-    y = input ("Second number:")
-    operation = input("Select operation: \n1.Add \n2.Subtract \n3.Multiply \n4.Divide \n")
+#ZeroDivisionError: division by zero / jutro
 
-    if operation == "1" :
-        score = x + y
-        print ("score")
-    elif operation == "2" :
-        score = x - y
-        print ("score")
-    elif operation == "3" :
-        score = x * y
-        print ("score")
-    elif operation == "4" :
-        score = x/y
-        print ("score")
+
+
+
+calculate("add", 5, 6)
 
 
 
