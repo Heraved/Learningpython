@@ -9,8 +9,16 @@ import unittest
 
 
 def calculate(operation, first_num, second_num):
-    result = 0
-    return result
+
+    x = input("First number:")
+    y= input ("Second number:")
+
+    if operation == "TestAddOperation" :
+      score = x + y
+
+      return score
+
+
 
 
 class TestAddOperation(unittest.TestCase):
