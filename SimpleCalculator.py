@@ -7,17 +7,24 @@ import unittest
 # Output:
 #    - function should return result of operation
 
-
 def calculate(operation, first_num, second_num):
 
     x = input("First number:")
-    y= input ("Second number:")
+    y = input ("Second number:")
+    operation = input("Select operation: \n1.Add \n2.Subtract \n3.Multiply \n4.Divide \n")
 
-    if operation == "TestAddOperation" :
-      score = x + y
-
-      return score
-
+    if operation == "1" :
+        score = x + y
+        print ("score")
+    elif operation == "2" :
+        score = x - y
+        print ("score")
+    elif operation == "3" :
+        score = x * y
+        print ("score")
+    elif operation == "4" :
+        score = x/y
+        print ("score")
 
 
 
