@@ -23,6 +23,7 @@ def calculate(operation, first_num, second_num):
     else :
         result = 0
 
+
     return
 
 #ZeroDivisionError: division by zero / jutro
