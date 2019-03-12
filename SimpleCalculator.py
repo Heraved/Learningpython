@@ -10,23 +10,27 @@ import unittest
 def calculate(operation, first_num, second_num):
     if operation == "add":
         result = first_num + second_num
-        return result
+
     elif operation == "subtract":
         result = first_num - second_num
-        return result
+
     elif operation == "multiply":
         result = first_num * second_num
-        return result
+
     elif operation == "divide":
         result = first_num  / second_num
-        return result
+
+    else :
+        result = 0
+
+    return
 
 #ZeroDivisionError: division by zero / jutro
 
 
 
 
-calculate("add", 5, 6)
+
 
 
 
