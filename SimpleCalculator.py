@@ -26,7 +26,6 @@ def calculate(operation, first_num, second_num):
 
     return
 
-#ZeroDivisionError: division by zero / jutro
 
 
 
