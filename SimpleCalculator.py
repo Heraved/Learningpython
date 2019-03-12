@@ -17,15 +17,22 @@ def calculate(operation, first_num, second_num):
     elif operation == "multiply":
         result = first_num * second_num
 
+
     elif operation == "divide":
         result = first_num  / second_num
-
-    else :
-        result = 0
-
-
-    return
+        if second_num == 0:
+            result = 0
 
 
 
-calculate("add", 6, 8)
+
+
+
+
+    return result
+
+
+calculate("add", 100, 0)
+
+
+print(calculate("add", 100, 0))
