@@ -1,4 +1,7 @@
+import io
 import unittest
+from unittest.mock import patch
+
 from SimpleCalculator import *
 
 
@@ -104,6 +107,33 @@ class TestCalculateManyRecords(unittest.TestCase):
         output_list = [101, 103, -40, 10, 50, 0, 0.2, 0]
 
         self.assertEqual(output_list, calculate_many_records(input_list))
+
+
+class TestInput(unittest.TestCase):
+
+    @patch('sys.stdout', new_callable=io.StringIO)
+    @patch('builtins.input', side_effect=["add", 5, 6])
+    def test_input_add_operation(self, input, mock_stdout):
+        calculate_with_input()
+        self.assertEqual("11\n", mock_stdout.getvalue())
+
+    @patch('sys.stdout', new_callable=io.StringIO)
+    @patch('builtins.input', side_effect=["subtract", 5, 6])
+    def test_input_subtract_operation(self, input, mock_stdout):
+        calculate_with_input()
+        self.assertEqual("-1\n", mock_stdout.getvalue())
+
+    @patch('sys.stdout', new_callable=io.StringIO)
+    @patch('builtins.input', side_effect=["multiply", 5, 6])
+    def test_input_multiply_operation(self, input, mock_stdout):
+        calculate_with_input()
+        self.assertEqual("30\n", mock_stdout.getvalue())
+
+    @patch('sys.stdout', new_callable=io.StringIO)
+    @patch('builtins.input', side_effect=["divide", 12, 6])
+    def test_input_divide_operation(self, input, mock_stdout):
+        calculate_with_input()
+        self.assertEqual("2.0\n", mock_stdout.getvalue())
 
 
 if __name__ == '__main__':
