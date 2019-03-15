@@ -22,11 +22,26 @@ def calculate(operation, first_num, second_num):
 #    This function should use calculate function on parameters stored in list os lists passed as parameter
 def calculate_many_records(list_of_records):
     result_list=  []
-    for x in example_list :
-        print (x)
-
+    for x in list_of_records :
+        operation, firstnumb, secondnumb = x
+        result_list.append(calculate(operation, firstnumb,secondnumb))
     # somewhere here you should create your implementation
     return result_list
+
+
+def calculate_with_input() :
+    operation = input('Choose operation:\nadd\nsubtract\nmultiply\ndivide\n')
+    first_numb = int(input('First number:\n'))
+    second_numb = int(input('Second number:\n'))
+    result = calculate(operation,first_numb,second_numb)
+    
+    print ("The result is:",result)
+
+    return result
+
+calculate_with_input()
+
+
 
 # lines below are another way to look if your code, it is example how this code could be used
 # you can also use it to check how it works
@@ -37,4 +52,4 @@ example_list = [["add", 0, 100],
 
 
 
-print(calculate_many_records(example_list))
+#print(calculate_many_records(example_list))
