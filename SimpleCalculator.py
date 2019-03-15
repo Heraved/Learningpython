@@ -21,10 +21,10 @@ def calculate(operation, first_num, second_num):
 # OUTPUT:   it should return list of calculated values
 #    This function should use calculate function on parameters stored in list os lists passed as parameter
 def calculate_many_records(list_of_records):
-    result_list=  []
-    for x in example_list :
-        print (x)
-
+    result_list= []
+    for x in list_of_records:
+        operation, firstnumb, secondnumb = x
+        result_list.append(calculate(operation,firstnumb,secondnumb))
     # somewhere here you should create your implementation
     return result_list
 
