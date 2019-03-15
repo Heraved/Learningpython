@@ -115,25 +115,25 @@ class TestInput(unittest.TestCase):
     @patch('builtins.input', side_effect=["add", 5, 6])
     def test_input_add_operation(self, input, mock_stdout):
         calculate_with_input()
-        self.assertEqual("11\n", mock_stdout.getvalue())
+        self.assertEqual("The result is: 11\n", mock_stdout.getvalue())
 
     @patch('sys.stdout', new_callable=io.StringIO)
     @patch('builtins.input', side_effect=["subtract", 5, 6])
     def test_input_subtract_operation(self, input, mock_stdout):
         calculate_with_input()
-        self.assertEqual("-1\n", mock_stdout.getvalue())
+        self.assertEqual("The result is: -1\n", mock_stdout.getvalue())
 
     @patch('sys.stdout', new_callable=io.StringIO)
     @patch('builtins.input', side_effect=["multiply", 5, 6])
     def test_input_multiply_operation(self, input, mock_stdout):
         calculate_with_input()
-        self.assertEqual("30\n", mock_stdout.getvalue())
+        self.assertEqual("The result is: 30\n", mock_stdout.getvalue())
 
     @patch('sys.stdout', new_callable=io.StringIO)
     @patch('builtins.input', side_effect=["divide", 12, 6])
     def test_input_divide_operation(self, input, mock_stdout):
         calculate_with_input()
-        self.assertEqual("2.0\n", mock_stdout.getvalue())
+        self.assertEqual("The result is: 2.0\n", mock_stdout.getvalue())
 
 
 if __name__ == '__main__':

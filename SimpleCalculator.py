@@ -39,17 +39,8 @@ def calculate_with_input() :
 
     return result
 
-calculate_with_input()
 
-
-
-# lines below are another way to look if your code, it is example how this code could be used
-# you can also use it to check how it works
-example_list = [["add", 0, 100],
-                ["subtract", 10, 50],
-                ["multiply", 10, 50],
-                ["divide", 10, 50]]
-
-
-
-#print(calculate_many_records(example_list))
+# above lines should only be used to write definitions of functions
+# from here is main function where you can call your functions
+if __name__ == '__main__':
+    calculate_with_input()
