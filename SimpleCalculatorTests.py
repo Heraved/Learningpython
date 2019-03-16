@@ -136,5 +136,42 @@ class TestInput(unittest.TestCase):
         self.assertEqual("The result is: 2.0\n", mock_stdout.getvalue())
 
 
+class TestFindMinMaxValue(unittest.TestCase):
+    def __init__(self, unit_test):
+        super().__init__(unit_test)
+        self.values = [100, -2, 33, -400, 1000]
+
+    def test_find_min_value(self):
+        self.assertEqual(-400, find_min_value(self.values))
+
+    def test_find_max_value(self):
+        self.assertEqual(1000, find_max_value(self.values))
+
+
+class TestAverageValue(unittest.TestCase):
+
+    def test_average(self):
+        values = [100, 50, 200, 50]
+        self.assertEqual(100, calculate_average(values))
+
+
+class TestSortingFunction(unittest.TestCase):
+
+    def test_sorting_ascending(self):
+        values = [2, 1, 3, 7, 10, 5, 4]
+        copy_of_values = values.copy()
+        self.assertEqual(sorted(copy_of_values), sort_values(values))
+
+    def test_sorting_descending(self):
+        values = [2, 1, 3, 7, 10, 5, 4]
+        copy_of_values = values.copy()
+        self.assertEqual(sorted(copy_of_values, reverse=True), sort_values(values, "reverse"))
+
+    def test_sorting_incorrect_order(self):
+        values = [2, 1, 3, 7, 10, 5, 4]
+        copy_of_values = values.copy()
+        self.assertEqual(copy_of_values, sort_values(values, "fast"))
+
+
 if __name__ == '__main__':
     unittest.main()
