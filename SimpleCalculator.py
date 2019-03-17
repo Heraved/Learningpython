@@ -35,6 +35,32 @@ def calculate_with_input():
     return result
 
 
+# this function was created by me, it will return True if it is number, otherwise False
+def is_number(value):
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
+
+
+# TODO implement this function, it should take as input string about, what you want to do, something like:
+# TODO "add 7 to 9", and then it should parse string that was passed to console, and call on it function calculate
+# TODO it should only work for 2 numbers, 3 or more numbers shouldn't be possible with this function,
+# TODO it should be possible to pass many operations ex. "add subtract 7 9", and it should calculate all required
+# TODO operations for this input. Results should always be returned as list, for one operation it would be 1 element
+# TODO list, but if there are more operations then list will be longer
+# TODO to solve it you might want to use function is_member(value) that I already implemented for you, it should
+# TODO return True if value is number and return False otherwise
+# TODO Also check split function, it is function for strings, it is possible to you this function to split sentence into
+# TODO many words
+def calculate_with_string_input():
+    sentence = input("What do you want to calculate: ")
+    # TODO here should be implementation
+    ret_list = []
+    return ret_list
+
+
 # TODO this function should take list of values, then return value with smallest value
 def find_min_value(values):
     min_value = 0
@@ -66,6 +92,4 @@ def sort_values(values, order="normal"):
 # above lines should only be used to write definitions of functions
 # from here is main function where you can call your functions
 if __name__ == '__main__':
-    values = [1, 3, 5, 2, 10]
-    sort_values(values)
-    print(values)
+    print(calculate_with_string_input())

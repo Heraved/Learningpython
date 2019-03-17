@@ -173,5 +173,23 @@ class TestSortingFunction(unittest.TestCase):
         self.assertEqual(copy_of_values, sort_values(values, "fast"))
 
 
+class TestStringInput(unittest.TestCase):
+
+    @patch('builtins.input', side_effect=["add 7 to 9"])
+    def test_input_one_operation(self, input):
+        expected_list = [16.0]
+        self.assertEqual(expected_list, calculate_with_string_input())
+
+    @patch('builtins.input', side_effect=["add multiply subtract divide 20 -2.5"])
+    def test_input_many_operations(self, input):
+        expected_list = [17.5, -50.0, 22.5, -8.0]
+        self.assertEqual(expected_list, calculate_with_string_input())
+
+    @patch('builtins.input', side_effect=["20 -2.5"])
+    def test_input_no_operations(self, input):
+        expected_list = []
+        self.assertEqual(expected_list, calculate_with_string_input())
+
+
 if __name__ == '__main__':
     unittest.main()
