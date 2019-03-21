@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65a06fb6-53e0-4f18-baa8-d404114437ea" name="Default Changelist" comment="" />
+    <list default="true" id="65a06fb6-53e0-4f18-baa8-d404114437ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Learningpython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Learningpython.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCalculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCalculator.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SimpleCalculator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            <state relative-caret-position="260">
+              <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -72,6 +77,9 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -84,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for SimpleCalculatorTests.TestSortingFunction">
+  <component name="RunManager" selected="Python.SimpleCalculator">
     <configuration name="SimpleCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Learningpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,9 +100,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\Pythonlearning\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimpleCalculator.py" />
@@ -138,11 +146,12 @@
       <module name="Learningpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\Python\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;SimpleCalculatorTests.TestSortingFunction&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
@@ -164,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SimpleCalculator" />
         <item itemvalue="Python tests.Unittests for SimpleCalculatorTests.TestSortingFunction" />
         <item itemvalue="Python tests.Unittests for SimpleCalculatorTests.TestAverageValue" />
         <item itemvalue="Python tests.Unittests for SimpleCalculatorTests.TestFindMinMaxValue" />
         <item itemvalue="Python tests.Unittests in SimpleCalculatorTests.py" />
-        <item itemvalue="Python.SimpleCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -204,16 +213,17 @@
       <option name="project" value="LOCAL" />
       <updated>1552836709073</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added calculate_average">
+      <created>1553183678820</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553183678820</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_SimpleCalculatorTests_TestStringInput_test_input_many_operations - 2019.03.17 at 14h 20m 46s.xml">
-      <configuration name="Unittests for SimpleCalculatorTests.TestStringInput.test_input_many_operations" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_SimpleCalculatorTests_TestStringInput_test_input_many_operations - 2019.03.17 at 14h 21m 26s.xml">
-      <configuration name="Unittests for SimpleCalculatorTests.TestStringInput.test_input_many_operations" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_SimpleCalculatorTests_TestStringInput_test_input_no - 2019.03.17 at 14h 22m 42s.xml">
       <configuration name="Unittests for SimpleCalculatorTests.TestStringInput.test_input_no" configurationId="tests" />
     </history-entry>
@@ -238,6 +248,12 @@
     <history-entry file="Unittests_for_SimpleCalculatorTests_TestSortingFunction - 2019.03.17 at 16h 30m 49s.xml">
       <configuration name="Unittests for SimpleCalculatorTests.TestSortingFunction" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestSortingFunction - 2019.03.21 at 17h 06m 30s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestSortingFunction" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestSortingFunction - 2019.03.21 at 17h 06m 37s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestSortingFunction" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,18 +268,19 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.24925596" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.24925596" />
       <window_info id="Structure" order="1" sideWeight="0.5016077" side_tool="true" weight="0.24972796" />
       <window_info id="Favorites" order="2" sideWeight="0.5016077" side_tool="true" weight="0.24972796" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32733223" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297414" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3297414" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -275,7 +292,8 @@
     <MESSAGE value="Main is back!!!!" />
     <MESSAGE value="Added min max, average and sort exercises" />
     <MESSAGE value="Added parsing string input exercise" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added parsing string input exercise" />
+    <MESSAGE value="added calculate_average" />
+    <option name="LAST_COMMIT_MESSAGE" value="added calculate_average" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1247971763/builtins.py" />
@@ -299,8 +317,8 @@
     <entry file="file:///usr/lib/python3.6/unittest/main.py" />
     <entry file="file://$PROJECT_DIR$/SimpleCalculator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        <state relative-caret-position="260">
+          <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
         </state>
       </provider>
     </entry>
