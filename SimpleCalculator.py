@@ -76,13 +76,10 @@ def find_max_value(values):
 
 
 # TODO this function should take list of values, then return average of those values
-list_of_values = [1,2,3,4]
 
 def calculate_average(values):
     average = 0
-    for average in values:
-        average = sum(values) / len(values)
-    print (average)
+    average = sum(values) / len(values)
     # TODO  here should be your implementation
     return average
 
@@ -91,11 +88,15 @@ def calculate_average(values):
 # TODO this function should take list of values,
 # then returns sorted list in ascending(normal) or descending(reverse" order
 def sort_values(values, order="normal"):
-    # TODO  here should be your implementation
+     # TODO  here should be your implementation
     return values
 
 
 # above lines should only be used to write definitions of functions
 # from here is main function where you can call your functions
-if __name__ == '__main__' :
-    calculate_average(list_of_values)
+
+
+list_of_values = [1,5,2,4]
+
+if __name__ == '__main__':
+    print(calculate_average(list_of_values))

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a06fb6-53e0-4f18-baa8-d404114437ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Learningpython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Learningpython.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleCalculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCalculator.py" afterDir="false" />
     </list>
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SimpleCalculator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
+            <state relative-caret-position="226">
+              <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -53,10 +51,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="59" />
-    <option name="y" value="27" />
-    <option name="width" value="931" />
-    <option name="height" value="1053" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -220,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553183678820</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added calculate_average">
+      <created>1553185357324</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553185357324</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -317,8 +322,8 @@
     <entry file="file:///usr/lib/python3.6/unittest/main.py" />
     <entry file="file://$PROJECT_DIR$/SimpleCalculator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
+        <state relative-caret-position="226">
+          <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
         </state>
       </provider>
     </entry>
