@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65a06fb6-53e0-4f18-baa8-d404114437ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCalculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCalculator.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Learningpython" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SimpleCalculator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleCalculatorTests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2210">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SimpleCalculatorTests.py" />
+        <option value="$PROJECT_DIR$/SimpleCalculator.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Learningpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Learningpython" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.SimpleCalculator">
+    <configuration name="SimpleCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Learningpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Pythonlearning\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimpleCalculator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for SimpleCalculatorTests.TestAverageValue" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Learningpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;SimpleCalculatorTests.TestAverageValue&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for SimpleCalculatorTests.TestFindMinMaxValue" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Learningpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;SimpleCalculatorTests.TestFindMinMaxValue&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for SimpleCalculatorTests.TestSortingFunction" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Learningpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\Python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;SimpleCalculatorTests.TestSortingFunction&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in SimpleCalculatorTests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Learningpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/SimpleCalculatorTests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.SimpleCalculator" />
+        <item itemvalue="Python tests.Unittests for SimpleCalculatorTests.TestSortingFunction" />
+        <item itemvalue="Python tests.Unittests for SimpleCalculatorTests.TestAverageValue" />
+        <item itemvalue="Python tests.Unittests for SimpleCalculatorTests.TestFindMinMaxValue" />
+        <item itemvalue="Python tests.Unittests in SimpleCalculatorTests.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65a06fb6-53e0-4f18-baa8-d404114437ea" name="Default Changelist" comment="" />
+      <created>1552688493148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552688493148</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Main is back!!!!">
+      <created>1552689476222</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552689476222</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added min max, average and sort exercises">
+      <created>1552775546748</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552775546748</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added parsing string input exercise">
+      <created>1552836709073</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552836709073</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added calculate_average">
+      <created>1553183678820</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553183678820</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added calculate_average">
+      <created>1553185357324</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553185357324</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestStringInput_test_input_no - 2019.03.17 at 14h 22m 42s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestStringInput.test_input_no" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestStringInput_test_input_no - 2019.03.17 at 15h 59m 32s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestStringInput.test_input_no" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestStringInput_test_input_no_operations - 2019.03.17 at 16h 00m 08s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestStringInput.test_input_no_operations" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_SimpleCalculatorTests_py - 2019.03.17 at 16h 29m 46s.xml">
+      <configuration name="Unittests in SimpleCalculatorTests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_SimpleCalculatorTests_py - 2019.03.17 at 16h 30m 30s.xml">
+      <configuration name="Unittests in SimpleCalculatorTests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestFindMinMaxValue - 2019.03.17 at 16h 30m 40s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestFindMinMaxValue" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestAverageValue - 2019.03.17 at 16h 30m 44s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestAverageValue" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestSortingFunction - 2019.03.17 at 16h 30m 49s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestSortingFunction" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestSortingFunction - 2019.03.21 at 17h 06m 30s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestSortingFunction" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_SimpleCalculatorTests_TestSortingFunction - 2019.03.21 at 17h 06m 37s.xml">
+      <configuration name="Unittests for SimpleCalculatorTests.TestSortingFunction" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.24925596" />
+      <window_info id="Structure" order="1" sideWeight="0.5016077" side_tool="true" weight="0.24972796" />
+      <window_info id="Favorites" order="2" sideWeight="0.5016077" side_tool="true" weight="0.24972796" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32733223" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3297414" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Main is back!!!!" />
+    <MESSAGE value="Added min max, average and sort exercises" />
+    <MESSAGE value="Added parsing string input exercise" />
+    <MESSAGE value="added calculate_average" />
+    <option name="LAST_COMMIT_MESSAGE" value="added calculate_average" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1247971763/builtins.py" />
+    <entry file="file:///usr/lib/python3.6/unittest/suite.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="306" selection-start-line="306" selection-end-line="306" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_unittest_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/unittest/case.py" />
+    <entry file="file:///usr/lib/python3.6/unittest/runner.py" />
+    <entry file="file:///usr/lib/python3.6/unittest/main.py" />
+    <entry file="file://$PROJECT_DIR$/SimpleCalculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleCalculatorTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
