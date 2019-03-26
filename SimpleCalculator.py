@@ -92,7 +92,7 @@ def calculate_average(values):
 def sort_values(values, order="normal"):
     for x in range(0,5):
         for i in range(0,5):
-            if list[i] > list[i+1] :
+            if list[i] > list[i+1]:
                 x = list[i]
                 list[i]= list[i+1]
                 list[i+1]= x
