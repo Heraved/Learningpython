@@ -56,6 +56,7 @@ def is_number(value):
 # TODO many words
 def calculate_with_string_input():
     sentence = input("What do you want to calculate: ")
+
     # TODO here should be implementation
     ret_list = []
     return ret_list
@@ -71,26 +72,17 @@ def find_min_value(values):
 # TODO this function should take list of values, then return value with biggest value
 def find_max_value(values):
     max_value = 0
-    # TODO  here should be your implementation
+
+
     return max_value
 
 
 # TODO this function should take list of values, then return average of those values
-<<<<<<< HEAD
+
 
 def calculate_average(values):
     average = 0
     average = sum(values) / len(values)
-=======
-list_of_values = [1,2,3,4]
-
-def calculate_average(values):
-    average = 0
-    for average in values:
-        average = sum(values) / len(values)
-    print (average)
->>>>>>> origin/calculate_average
-    # TODO  here should be your implementation
     return average
 
 
@@ -98,20 +90,25 @@ def calculate_average(values):
 # TODO this function should take list of values,
 # then returns sorted list in ascending(normal) or descending(reverse" order
 def sort_values(values, order="normal"):
-     # TODO  here should be your implementation
+    for x in range(0,5):
+        for i in range(0,5):
+            if list[i] > list[i+1] :
+                x = list[i]
+                list[i]= list[i+1]
+                list[i+1]= x
+
+
     return values
 
 
 # above lines should only be used to write definitions of functions
 # from here is main function where you can call your functions
-<<<<<<< HEAD
 
 
-list_of_values = [1,5,2,4]
+
+list= [1,5,2,4,6,3]
+
 
 if __name__ == '__main__':
-    print(calculate_average(list_of_values))
-=======
-if __name__ == '__main__' :
-    calculate_average(list_of_values)
->>>>>>> origin/calculate_average
+    print(sort_values(list))
+
