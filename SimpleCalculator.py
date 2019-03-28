@@ -90,12 +90,17 @@ def calculate_average(values):
 # TODO this function should take list of values,
 # then returns sorted list in ascending(normal) or descending(reverse" order
 def sort_values(values, order="normal"):
-    for x in range(0,5):
-        for i in range(0,5):
+    for x in range(len(values)):
+        for i in range(5):
             if list[i] > list[i+1]:
                 x = list[i]
                 list[i]= list[i+1]
                 list[i+1]= x
+            for x in range(5):
+                if list[i] < list[i+1]:
+                    y = list[i]
+                    list[i] = list[i+1]
+                    list[i+1] = y
 
 
     return values
