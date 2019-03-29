@@ -89,18 +89,30 @@ def calculate_average(values):
 
 # TODO this function should take list of values,
 # then returns sorted list in ascending(normal) or descending(reverse" order
-def sort_values(values, order="normal"):
+
+#this function sorts in ascending order
+def sort_values_normal(values):
     for x in range(len(values)):
         for i in range(5):
             if list[i] > list[i+1]:
                 x = list[i]
                 list[i]= list[i+1]
                 list[i+1]= x
-            for x in range(5):
-                if list[i] < list[i+1]:
-                    y = list[i]
-                    list[i] = list[i+1]
-                    list[i+1] = y
+
+
+
+    return values
+
+
+#this function sorts descending order
+def sort_values_reverse(values):
+    for x in range(len(values)):
+        for i in range(5):
+            if list[i] < list[i+1]:
+                y = list[i]
+                list[i] = list[i+1]
+                list[i+1] = y
+
 
 
     return values
@@ -115,5 +127,5 @@ list= [1,5,2,4,6,3]
 
 
 if __name__ == '__main__':
-    print(sort_values(list))
+    print(sort_values_reverse(list))
 
