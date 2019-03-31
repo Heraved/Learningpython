@@ -69,11 +69,11 @@ def find_min_value(values):
     return min_value
 
 
-# TODO this function should take list of values, then return value with biggest value
 def find_max_value(values):
     max_value = 0
-
-
+    for x in values:
+        if x > max_value:
+            max_value = x
     return max_value
 
 
