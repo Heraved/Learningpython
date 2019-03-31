@@ -86,46 +86,43 @@ def calculate_average(values):
     return average
 
 
-
-# TODO this function should take list of values,
 # then returns sorted list in ascending(normal) or descending(reverse" order
+def sort_values(values, order='normal'):
+    if order == "normal":
+        sort_values_normal(values)
+    elif order == "reverse":
+        sort_values_reverse(values)
+    return values
 
-#this function sorts in ascending order
+
+def switch_values(left, right):
+    temp = left
+    left = right
+    right = temp
+    return left, right
+
+
+# this function sorts in ascending order
 def sort_values_normal(values):
     for x in range(len(values)):
-        for i in range(5):
-            if list[i] > list[i+1]:
-                x = list[i]
-                list[i]= list[i+1]
-                list[i+1]= x
+        for i in range(len(values)-1):
+            if values[i] > values[i+1]:
+                values[i], values[i+1] = switch_values(values[i], values[i+1])
 
 
-
-    return values
-
-
-#this function sorts descending order
+# this function sorts descending order
 def sort_values_reverse(values):
     for x in range(len(values)):
-        for i in range(5):
-            if list[i] < list[i+1]:
-                y = list[i]
-                list[i] = list[i+1]
-                list[i+1] = y
-
-
-
-    return values
+        for i in range(len(values)-1):
+            if values[i] < values[i+1]:
+                values[i], values[i + 1] = switch_values(values[i], values[i + 1])
 
 
 # above lines should only be used to write definitions of functions
 # from here is main function where you can call your functions
 
 
-
-list= [1,5,2,4,6,3]
-
-
 if __name__ == '__main__':
-    print(sort_values_reverse(list))
+    list_of_values = [1, 5, 2, 4, 6, 3]
+    print(sort_values(list_of_values))
 
