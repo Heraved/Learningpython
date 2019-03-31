@@ -56,6 +56,7 @@ def is_number(value):
 # TODO many words
 def calculate_with_string_input():
     sentence = input("What do you want to calculate: ")
+
     # TODO here should be implementation
     ret_list = []
     return ret_list
@@ -71,32 +72,57 @@ def find_min_value(values):
 # TODO this function should take list of values, then return value with biggest value
 def find_max_value(values):
     max_value = 0
-    # TODO  here should be your implementation
+
+
     return max_value
 
 
 # TODO this function should take list of values, then return average of those values
 
+
 def calculate_average(values):
     average = 0
     average = sum(values) / len(values)
-    # TODO  here should be your implementation
     return average
 
 
-
-# TODO this function should take list of values,
 # then returns sorted list in ascending(normal) or descending(reverse" order
-def sort_values(values, order="normal"):
-     # TODO  here should be your implementation
+def sort_values(values, order='normal'):
+    if order == "normal":
+        sort_values_normal(values)
+    elif order == "reverse":
+        sort_values_reverse(values)
     return values
+
+
+def switch_values(left, right):
+    temp = left
+    left = right
+    right = temp
+    return left, right
+
+
+# this function sorts in ascending order
+def sort_values_normal(values):
+    for x in range(len(values)):
+        for i in range(len(values)-1):
+            if values[i] > values[i+1]:
+                values[i], values[i+1] = switch_values(values[i], values[i+1])
+
+
+# this function sorts descending order
+def sort_values_reverse(values):
+    for x in range(len(values)):
+        for i in range(len(values)-1):
+            if values[i] < values[i+1]:
+                values[i], values[i + 1] = switch_values(values[i], values[i + 1])
 
 
 # above lines should only be used to write definitions of functions
 # from here is main function where you can call your functions
 
 
-list_of_values = [1,5,2,4]
-
 if __name__ == '__main__':
-    print(calculate_average(list_of_values))
+    list_of_values = [1, 5, 2, 4, 6, 3]
+    print(sort_values(list_of_values))
+
