@@ -65,7 +65,9 @@ def calculate_with_string_input():
 # TODO this function should take list of values, then return value with smallest value
 def find_min_value(values):
     min_value = 0
-    # TODO  here should be your implementation
+    for x in values:
+        if x < min_value:
+            min_value = x
     return min_value
 
 
@@ -124,5 +126,5 @@ def sort_values_reverse(values):
 
 if __name__ == '__main__':
     list_of_values = [1, 5, 2, 4, 6, 3]
-    print(sort_values(list_of_values))
+    print(find_min_value(list_of_values))
 
