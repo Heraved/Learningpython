@@ -55,10 +55,14 @@ def is_number(value):
 # TODO Also check split function, it is function for strings, it is possible to you this function to split sentence into
 # TODO many words
 def calculate_with_string_input():
-    sentence = input("What do you want to calculate: ")
-
-    # TODO here should be implementation
+    sentence = input("What do you want to calculate: ").split( )
     ret_list = []
+    for x in sentence:
+        operation, first_numb, second_numb = sentence
+        ret_list = calculate(operation, int(first_numb), int(second_numb))
+        #is_number(int())
+
+
     return ret_list
 
 
@@ -127,5 +131,5 @@ def sort_values_reverse(values):
 
 if __name__ == '__main__':
     list_of_values = [1, 5, 2, 4, 6, 3]
-    print(find_min_value(list_of_values))
+    print(calculate_with_string_input())
 
