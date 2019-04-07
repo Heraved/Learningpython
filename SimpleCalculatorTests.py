@@ -159,7 +159,7 @@ class TestAverageValue(unittest.TestCase):
 class TestSortingFunction(unittest.TestCase):
 
     def test_sorting_ascending(self):
-        values = [2, 1, 3, 7, 10, 5, 4]
+        values = [2, 1, 3, 7, 10, 5, 4, 3, 2]
         copy_of_values = values.copy()
         self.assertEqual(sorted(copy_of_values), sort_values(values))
 

@@ -23,15 +23,13 @@ def calculate_many_records(list_of_records):
         result_list.append(calculate(operation, first_numb, second_numb))
     return result_list
 
-
+# TODO this function should take to parameters:
+# TODO input_file_name - name of the file that contains operations
+# TODO result_file_name - name_of_file where we want to save results of operations
+# TODO if there is no result_file_name then it should create this new file with such name
+# TODO this function can use calculate function or other functions you created before
+# TODO this function has no return it only writes to file
 def calculate_from_file(input_file_name, result_file_name):
-    input_file = open(input_file_name, "r")
-    result_file = open(result_file_name, "w+")
-    for line in input_file:
-        operation, first, second = line.split(',')
-        result_file.write(str(calculate(operation, float(first), float(second))) + "\n")
-    input_file.close()
-    result_file.close()
 
 
 def calculate_with_input():
@@ -66,6 +64,7 @@ def is_number(value):
 # TODO many words
 def calculate_with_string_input():
     sentence = input("What do you want to calculate: ")
+
     # TODO here should be implementation
     ret_list = []
     return ret_list
@@ -74,36 +73,66 @@ def calculate_with_string_input():
 # TODO this function should take list of values, then return value with smallest value
 def find_min_value(values):
     min_value = 0
-    # TODO  here should be your implementation
+    for x in values:
+        if x < min_value:
+            min_value = x
     return min_value
 
 
-# TODO this function should take list of values, then return value with biggest value
 def find_max_value(values):
     max_value = 0
-    # TODO  here should be your implementation
+    for x in values:
+        if x > max_value:
+            max_value = x
     return max_value
 
 
 # TODO this function should take list of values, then return average of those values
 
+
 def calculate_average(values):
     average = 0
     average = sum(values) / len(values)
-    # TODO  here should be your implementation
     return average
 
 
-
-# TODO this function should take list of values,
 # then returns sorted list in ascending(normal) or descending(reverse" order
-def sort_values(values, order="normal"):
-     # TODO  here should be your implementation
+def sort_values(values, order='normal'):
+    if order == "normal":
+        sort_values_normal(values)
+    elif order == "reverse":
+        sort_values_reverse(values)
     return values
+
+
+def switch_values(left, right):
+    temp = left
+    left = right
+    right = temp
+    return left, right
+
+
+# this function sorts in ascending order
+def sort_values_normal(values):
+    for x in range(len(values)):
+        for i in range(len(values)-1):
+            if values[i] > values[i+1]:
+                values[i], values[i+1] = switch_values(values[i], values[i+1])
+
+
+# this function sorts descending order
+def sort_values_reverse(values):
+    for x in range(len(values)):
+        for i in range(len(values)-1):
+            if values[i] < values[i+1]:
+                values[i], values[i + 1] = switch_values(values[i], values[i + 1])
 
 
 # above lines should only be used to write definitions of functions
 # from here is main function where you can call your functions
+
+
 if __name__ == '__main__':
-    file_name = "input_data.txt"
-    calculate_from_file(file_name, "results.txt")
+    list_of_values = [1, 5, 2, 4, 6, 3]
+    print(find_min_value(list_of_values))
+
