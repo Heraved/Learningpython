@@ -23,6 +23,15 @@ def calculate_many_records(list_of_records):
         result_list.append(calculate(operation, first_numb, second_numb))
     return result_list
 
+# TODO this function should take to parameters:
+# TODO input_file_name - name of the file that contains operations
+# TODO result_file_name - name_of_file where we want to save results of operations
+# TODO if there is no result_file_name then it should create this new file with such name
+# TODO this function can use calculate function or other functions you created before
+# TODO this function has no return it only writes to file
+def calculate_from_file(input_file_name, result_file_name):
+    pass
+
 
 def calculate_with_input():
     operation = input('Choose operation:\nadd\nsubtract\nmultiply\ndivide\n')

@@ -1,4 +1,5 @@
 import io
+import os
 import unittest
 from unittest.mock import patch
 
@@ -189,6 +190,75 @@ class TestStringInput(unittest.TestCase):
     def test_input_no_operations(self, input):
         expected_list = []
         self.assertEqual(expected_list, calculate_with_string_input())
+
+
+class TestCalculatingFromFile(unittest.TestCase):
+
+    def __init__(self, unit_test):
+        super().__init__(unit_test)
+        self.test_file_name = "test_data.txt"
+        self.test_results_file_name = "test_results.txt"
+
+    def fill_test_input(self, input_list):
+        test_file = open(self. test_file_name, "w+")
+        for operation, first_num, second_num in input_list:
+            test_file.write(operation + "," + str(first_num) + "," + str(second_num) + "\n")
+        test_file.close()
+
+    def parse_result_to_list(self):
+        test_results_file = open(self.test_results_file_name, "r")
+        results = []
+        for line in test_results_file:
+            results.append(float(line))
+        test_results_file.close()
+        return results
+
+    def remove_unused_resources(self):
+        os.remove(self.test_file_name)
+        os.remove(self.test_results_file_name)
+
+    def test_sorting_ascending(self):
+        input_list = [["add", 0, 101],
+                      ["add", 2, 101],
+                      ["add", 2.5, 101],
+                      ["subtract", 10, 50],
+                      ["subtract", 20, 10],
+                      ["multiply", 10, 5],
+                      ["multiply", 3, 0],
+                      ["divide", 10, 50],
+                      ["divide", 10, 0],
+                      ["add", 100, 1],
+                      ["add", 100, -10],
+                      ["add", 0, -10],
+                      ["subtract", 10, 20],
+                      ["subtract", 10, -20],
+                      ["subtract", 10, 0],
+                      ["divide", 100, 10],
+                      ["divide", 100, -10],
+                      ["divide", 100, 0],
+                      ["divide", 0, 0],
+                      ["multiply", 100, 10],
+                      ["multiply", 100, -10],
+                      ["multiply", 100, 0],
+                      ["multiply", 0, 0]]
+
+        # ARRANGE TEST DATA
+        self.fill_test_input(input_list)
+
+        # ACT
+        calculate_from_file(self.test_file_name, self.test_results_file_name)
+
+        # PARSE RESULTS FROM FILE TO LIST
+        result_list = self.parse_result_to_list()
+
+        # CREATE EXPECTED VALUES
+        expected_results = calculate_many_records(input_list)
+
+        # ASSERT RESULTS
+        self.assertEqual(expected_results, result_list)
+
+        # REMOVE FILES
+        self.remove_unused_resources()
 
 
 if __name__ == '__main__':
