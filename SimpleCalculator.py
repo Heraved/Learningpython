@@ -30,6 +30,7 @@ def calculate_many_records(list_of_records):
 # TODO this function can use calculate function or other functions you created before
 # TODO this function has no return it only writes to file
 def calculate_from_file(input_file_name, result_file_name):
+    pass
 
 
 def calculate_with_input():
