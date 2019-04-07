@@ -24,6 +24,16 @@ def calculate_many_records(list_of_records):
     return result_list
 
 
+def calculate_from_file(input_file_name, result_file_name):
+    input_file = open(input_file_name, "r")
+    result_file = open(result_file_name, "w+")
+    for line in input_file:
+        operation, first, second = line.split(',')
+        result_file.write(str(calculate(operation, float(first), float(second))) + "\n")
+    input_file.close()
+    result_file.close()
+
+
 def calculate_with_input():
     operation = input('Choose operation:\nadd\nsubtract\nmultiply\ndivide\n')
     first_numb = int(input('First number:\n'))
@@ -94,9 +104,6 @@ def sort_values(values, order="normal"):
 
 # above lines should only be used to write definitions of functions
 # from here is main function where you can call your functions
-
-
-list_of_values = [1,5,2,4]
-
 if __name__ == '__main__':
-    print(calculate_average(list_of_values))
+    file_name = "input_data.txt"
+    calculate_from_file(file_name, "results.txt")
