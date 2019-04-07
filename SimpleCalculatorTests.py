@@ -242,23 +242,27 @@ class TestCalculatingFromFile(unittest.TestCase):
                       ["multiply", 100, 0],
                       ["multiply", 0, 0]]
 
-        # ARRANGE TEST DATA
-        self.fill_test_input(input_list)
+        try:
+            # ARRANGE TEST DATA
+            self.fill_test_input(input_list)
 
-        # ACT
-        calculate_from_file(self.test_file_name, self.test_results_file_name)
+            # ACT
+            calculate_from_file(self.test_file_name, self.test_results_file_name)
 
-        # PARSE RESULTS FROM FILE TO LIST
-        result_list = self.parse_result_to_list()
+            # PARSE RESULTS FROM FILE TO LIST
+            result_list = self.parse_result_to_list()
 
-        # CREATE EXPECTED VALUES
-        expected_results = calculate_many_records(input_list)
+            # CREATE EXPECTED VALUES
+            expected_results = calculate_many_records(input_list)
 
-        # ASSERT RESULTS
-        self.assertEqual(expected_results, result_list)
+            # ASSERT RESULTS
+            self.assertEqual(expected_results, result_list)
 
-        # REMOVE FILES
-        self.remove_unused_resources()
+            # REMOVE FILES
+            self.remove_unused_resources()
+        except FileNotFoundError:
+            # REMOVE FILES
+            self.remove_unused_resources()
 
 
 if __name__ == '__main__':
