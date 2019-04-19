@@ -43,6 +43,14 @@ def is_number(value):
     except ValueError:
         return False
 
+def find_with_index(elems, value):
+    try:
+        elems.index(value)
+        return True
+    except ValueError:
+        return False
+
+
 
 # TODO implement this function, it should take as input string about, what you want to do, something like:
 # TODO "add 7 to 9", and then it should parse string that was passed to console, and call on it function calculate
@@ -57,16 +65,31 @@ def is_number(value):
 def calculate_with_string_input():
     sentence = input("What do you want to calculate: ").split( )
     ret_list = []
-    for x in sentence:
-        operation, first_numb, second_numb = sentence
-        ret_list = calculate(operation, int(first_numb), int(second_numb))
-        #is_number(int())
+    possible_operations = ['add', 'subtract', 'multiply', 'divide']
+    operations_to_execute = []
+    first_numb = []
+    second_numb = []
 
+
+    for x in sentence:
+        if find_with_index(possible_operations,x):
+            operations_to_execute.append(x)
+
+    for y in sentence:
+        if is_number(y):
+            first_numb.append(y)
+            break
+
+    for z in sentence:
+        if is_number(z):
+            continue
+            second_numb.append(z)
+
+    ret_list = calculate(possible_operations,first_numb,second_numb)
 
     return ret_list
 
 
-# TODO this function should take list of values, then return value with smallest value
 def find_min_value(values):
     min_value = 0
     for x in values:
@@ -75,7 +98,6 @@ def find_min_value(values):
     return min_value
 
 
-# TODO this function should take list of values, then return value with biggest value
 def find_max_value(values):
     max_value = 0
     for x in values:
