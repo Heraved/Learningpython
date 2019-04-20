@@ -67,25 +67,20 @@ def calculate_with_string_input():
     ret_list = []
     possible_operations = ['add', 'subtract', 'multiply', 'divide']
     operations_to_execute = []
-    first_numb = []
-    second_numb = []
-
+    numbers = []
 
     for x in sentence:
         if find_with_index(possible_operations,x):
             operations_to_execute.append(x)
+        if is_number(x):
+            numbers.append(x)
+    first_num = numbers[0]
+    second_num = numbers[1]
 
-    for y in sentence:
-        if is_number(y):
-            first_numb.append(y)
-            break
-
-    for z in sentence:
-        if is_number(z):
-            continue
-            second_numb.append(z)
-
-    ret_list = calculate(possible_operations,first_numb,second_numb)
+    for y in operations_to_execute:
+        operation = y
+        score = calculate(operation,float(first_num),float(second_num))
+        ret_list.append(score)
 
     return ret_list
 
