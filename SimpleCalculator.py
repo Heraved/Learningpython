@@ -52,6 +52,14 @@ def is_number(value):
     except ValueError:
         return False
 
+def find_with_index(elems, value):
+    try:
+        elems.index(value)
+        return True
+    except ValueError:
+        return False
+
+
 
 # TODO implement this function, it should take as input string about, what you want to do, something like:
 # TODO "add 7 to 9", and then it should parse string that was passed to console, and call on it function calculate
@@ -64,14 +72,28 @@ def is_number(value):
 # TODO Also check split function, it is function for strings, it is possible to you this function to split sentence into
 # TODO many words
 def calculate_with_string_input():
-    sentence = input("What do you want to calculate: ")
-
-    # TODO here should be implementation
+    sentence = input("What do you want to calculate: ").split( )
     ret_list = []
+    possible_operations = ['add', 'subtract', 'multiply', 'divide']
+    operations_to_execute = []
+    numbers = []
+
+    for x in sentence:
+        if find_with_index(possible_operations,x):
+            operations_to_execute.append(x)
+        if is_number(x):
+            numbers.append(x)
+    first_num = numbers[0]
+    second_num = numbers[1]
+
+    for y in operations_to_execute:
+        operation = y
+        score = calculate(operation,float(first_num),float(second_num))
+        ret_list.append(score)
+
     return ret_list
 
 
-# TODO this function should take list of values, then return value with smallest value
 def find_min_value(values):
     min_value = 0
     for x in values:
@@ -135,5 +157,5 @@ def sort_values_reverse(values):
 
 if __name__ == '__main__':
     list_of_values = [1, 5, 2, 4, 6, 3]
-    print(find_min_value(list_of_values))
+    print(calculate_with_string_input())
 
