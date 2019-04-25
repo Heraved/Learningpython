@@ -110,7 +110,11 @@ def find_max_value(values):
     return max_value
 
 
-# TODO this function should take list of values, then return average of those values
+#def calculate_from_file(input_file_name, result_file_name):
+    f = open('input_data.txt', 'r')
+    print(f)
+
+
 
 
 def calculate_average(values):
@@ -157,5 +161,5 @@ def sort_values_reverse(values):
 
 if __name__ == '__main__':
     list_of_values = [1, 5, 2, 4, 6, 3]
-    print(calculate_with_string_input())
+
 
