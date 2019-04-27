@@ -23,6 +23,11 @@ def calculate_many_records(list_of_records):
         result_list.append(calculate(operation, first_numb, second_numb))
     return result_list
 
+example_list = [["add", 0, 100],
+                ["subtract", 10, 50],
+                ["multiply", 10, 50],
+                ["divide", 10, 50]]
+
 # TODO this function should take to parameters:
 # TODO input_file_name - name of the file that contains operations
 # TODO result_file_name - name_of_file where we want to save results of operations
@@ -30,7 +35,22 @@ def calculate_many_records(list_of_records):
 # TODO this function can use calculate function or other functions you created before
 # TODO this function has no return it only writes to file
 def calculate_from_file(input_file_name, result_file_name):
-    pass
+
+    file = open(input_file_name)
+    for list in file:
+        list_to_calculate = list.strip().split(',')
+        calculated = calculate_many_records(list_to_calculate)
+        file_with_result = open('result_file_name',w)
+        file_with_result.write('calculated')
+
+        file_with_result.write()
+
+
+
+
+
+
+
 
 
 def calculate_with_input():
@@ -110,13 +130,6 @@ def find_max_value(values):
     return max_value
 
 
-#def calculate_from_file(input_file_name, result_file_name):
-    f = open('input_data.txt', 'r')
-    print(f)
-
-
-
-
 def calculate_average(values):
     average = 0
     average = sum(values) / len(values)
@@ -159,7 +172,9 @@ def sort_values_reverse(values):
 # from here is main function where you can call your functions
 
 
+
 if __name__ == '__main__':
-    list_of_values = [1, 5, 2, 4, 6, 3]
-
-
+    file = open('input_data.txt')
+    for list in file:
+        list_to_calculate = list.strip().split(',', 1)
+        print(list_to_calculate)
