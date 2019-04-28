@@ -23,33 +23,30 @@ def calculate_many_records(list_of_records):
         result_list.append(calculate(operation, first_numb, second_numb))
     return result_list
 
-example_list = [["add", 0, 100],
-                ["subtract", 10, 50],
-                ["multiply", 10, 50],
-                ["divide", 10, 50]]
 
-# TODO this function should take to parameters:
-# TODO input_file_name - name of the file that contains operations
-# TODO result_file_name - name_of_file where we want to save results of operations
-# TODO if there is no result_file_name then it should create this new file with such name
-# TODO this function can use calculate function or other functions you created before
-# TODO this function has no return it only writes to file
 def calculate_from_file(input_file_name, result_file_name):
-
+    #calculate()
     file = open(input_file_name)
-    for list in file:
-        list_to_calculate = list.strip().split(',')
-        calculated = calculate_many_records(list_to_calculate)
-        file_with_result = open('result_file_name',w)
-        file_with_result.write('calculated')
+    results = []
 
-        file_with_result.write()
+    for line in file:
+        example_list = line.strip().split(',')
+        operation = example_list[0]
+        first_numb = example_list[1]
+        second_numb = example_list[2]
+        results.append(calculate(operation,int(first_numb),int(second_numb))
+        # int could be replace by float, depends of what numbers we calculated i put int because the numbers are integer
+        result_file = open(result_file_name,'w')
+        result_file.write(str(results))
 
 
 
 
 
 
+
+
+    #calculate_many_records()
 
 
 
@@ -174,7 +171,4 @@ def sort_values_reverse(values):
 
 
 if __name__ == '__main__':
-    file = open('input_data.txt')
-    for list in file:
-        list_to_calculate = list.strip().split(',', 1)
-        print(list_to_calculate)
+    print(calculate_from_file(input_data.txt,result_file_name)
