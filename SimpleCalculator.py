@@ -1,3 +1,6 @@
+from textwrap import fill
+
+
 def calculate(operation, first_num, second_num):
     result = 0
     if operation == "add":
@@ -31,28 +34,33 @@ def calculate_from_file(input_file_name, result_file_name):
     results = []
 
     for line in file:
-
         example_list = line.strip().split(',')
         operation = example_list[0]
         first_numb = example_list[1]
         second_numb = example_list[2]
         results.append(calculate(operation,int(first_numb),int(second_numb)))
         # int could be replace by float, depends of what numbers we calculated i put int because the numbers are integer
+    for result in results:
         result_file = open(result_file_name,'w')
         result_file.write(str(results))
+        result_file.close()
 
 
-
-
-
-
-
-#calculate_many_records():
+#2
+#calculate_many_records()
 def another_calculate_from_file(input_file_name, result_file_name):
     file = open(input_file_name)
     operations_to_make = []
     for line in file:
-        print(line[1])
+        example_list = line.strip().split(',')
+        operation = str(example_list[0])
+        first_numb = float(example_list[1])
+        second_numb = float(example_list[2])
+        operations_to_make = [[operation, first_numb, second_numb]]
+        results = calculate_many_records(operations_to_make)
+        print(results)
+        results_data = open('result_file_name','w')
+        results_data.write(str(results))
 
 def calculate_with_input():
     operation = input('Choose operation:\nadd\nsubtract\nmultiply\ndivide\n')
@@ -173,4 +181,4 @@ def sort_values_reverse(values):
 # from here is main function where you can call your functions
 
 if __name__ == '__main__':
-    print(calculate_from_file('input_data.txt', 'result_file.txt'))
+    print(another_calculate_from_file('input_data.txt', 'results_data.txt'))
