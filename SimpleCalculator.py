@@ -34,15 +34,15 @@ def calculate_from_file(input_file_name, result_file_name):
     for line in file:
         example_list = line.split(',')
         operation = example_list[0]
-        first_numb = example_list[1]
-        second_numb = example_list[2]
-        results.append(calculate(operation,int(first_numb),int(second_numb)))
-        # int could be replace by float, depends of what numbers we calculated i put int because the numbers are integer
-        #for result in results:
-        for result in results:
-            result_file = open(result_file_name, 'w')
-            result_file.write(str(results))
-            result_file.close()
+        first_numb = float(example_list[1])
+        second_numb = float(example_list[2])
+        results.append(calculate(operation,first_numb,second_numb))
+    result_file = open(result_file_name, 'w')
+    
+    for result in results:
+        result_file.write(str(result)+ '\n')
+
+    result_file.close()
 
 
 #2
@@ -55,12 +55,14 @@ def another_calculate_from_file(input_file_name, result_file_name):
         operation = str(example_list[0])
         first_numb = float(example_list[1])
         second_numb = float(example_list[2])
-        operations_to_make = [[operation, first_numb, second_numb]]
-        results = calculate_many_records(operations_to_make)
-        for result in results:
-            result_file = open(result_file_name, 'w')
-            result_file.write(str(result))
-            result_file.close()
+        operations_to_make.append([operation, first_numb, second_numb])
+
+    results = calculate_many_records(operations_to_make)
+
+    result_file = open(result_file_name, 'w')
+    for result in results:
+        result_file.write(str(result)+'\n')
+    result_file.close()
 
 
 def calculate_with_input():
@@ -182,4 +184,4 @@ def sort_values_reverse(values):
 # from here is main function where you can call your functions
 
 if __name__ == '__main__':
-    print(calculate_from_file('input_data.txt', 'result_file.txt'))
+    print(another_calculate_from_file('input_data.txt', 'result_file.txt'))
